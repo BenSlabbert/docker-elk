@@ -1,0 +1,10 @@
+- pipeline.id: logs
+  pipeline.workers: 1
+  pipeline.batch.size: 1
+  queue.type: persisted
+  path.config: "/usr/share/logstash/pipeline/conf_a.conf"
+- pipeline.id: useagedata
+  pipeline.workers: 1
+  pipeline.batch.size: 1
+  queue.type: persisted
+  path.config: "/usr/share/logstash/pipeline/conf_b.conf"
